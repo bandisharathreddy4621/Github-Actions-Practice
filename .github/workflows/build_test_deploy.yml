@@ -1,0 +1,18 @@
+name: Build_Test_Deploy
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build_app
+        run: echo "Build Successful"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test_app
+        run: echo "Test Successful"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy_app
+        run: echo "App Deployed Successfully"
