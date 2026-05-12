@@ -8,11 +8,13 @@ jobs:
         run: echo "Build Successful"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: test_app
         run: echo "Test Successful"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: deploy_app
         run: echo "App Deployed Successfully"
