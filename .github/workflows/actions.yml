@@ -1,0 +1,17 @@
+name: actions
+on: workflow_dispatch
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print working Directory
+        run: pwd
+
+      - name: List all Files
+        run: ls
+
+      - name: Print Message
+        run: echo "Learning Actions"
