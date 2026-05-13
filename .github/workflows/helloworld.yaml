@@ -9,3 +9,4 @@ jobs:
       echo "Hello World"
       echo "New Line"
       echo "${{ vars.MY_NAME }}"
+      echo "${{ secrets.MY_PASS }}"
