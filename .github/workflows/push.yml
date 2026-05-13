@@ -1,0 +1,8 @@
+name: push_workflow
+on: push
+jobs:
+  on_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: push
+        run: echo "Someone pushed something to repository"
