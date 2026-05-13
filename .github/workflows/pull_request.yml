@@ -1,8 +1,0 @@
-name: pull_request
-on: pull_request
-jobs:
-  pull_request:
-    runs-on: ubuntu-latest
-    steps:
-      - name: pull_request
-        run: echo "Pull Request Initiated"
