@@ -8,3 +8,4 @@ jobs:
      run: |
       echo "Hello World"
       echo "New Line"
+      echo "${{ vars.MY_NAME }}"
